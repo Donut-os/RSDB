@@ -1,19 +1,23 @@
-<body style="background-color:#EAFAF1">
-      Enter Password:
-      <input type='text' value='' id='input'><br><br>
-      <input type='checkbox' onclick='protectpasscode()'>Show results
-      <p id='tutorial' style='display:none; color: black;'>Mahendra Singh Dhoni, also known as MS Dhoni, is an Indian former international
-      cricketer who was captain of the Indian national cricket team in limited-overs formats
-      from 2007 to 2017 and in Test cricket from 2008 to 2014. </p>
-      <script>
-         function protectpasscode() {
-            var a = document.getElementById('input');
-            var b = document.getElementById('tutorial');
-            if (a.value === '54') {
-               b.style.display = 'block';
-            } else {
-               b.style.display = 'none';
+<body>
+      <center>
+         <input type="password" placeholder="passcode" id="tutorial">
+         <button onclick="protectpasscode()">CHECK</button>
+         <script>
+            function protectpasscode() {
+               const result = document.getElementById("tutorial").value;
+               let passcode = 12345;
+               let space = '';
+               if (result == space) {
+                  alert("Type passcode")
+               } else {
+                  if (result == passcode) {
+                     document.write("<center><h1>TP, The Best E-Learning </h1></center>");
+                  } else {
+                     alert("Incorrect Passcode");
+                     location.reload();
+                  }
+               }
             }
-         }
-      </script>
-   </body>
+         </script>
+      </center>
+</body>
