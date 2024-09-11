@@ -1,23 +1,25 @@
-<body>
-      <center>
-            <input type="text" placeholder="Username" id="User">
-            <input type="password" placeholder="Password" id="PW">
-            <button Onclick="protectpassword()">Enter</button>
-            <script>
-                  function protectpassword()
-                        const result = document.getElementById("tutorial").value;
-                           let passcode = 12345;
-                           let space = '';
-                           if (result == space) {
-                              alert("type passcode")
-                           } else {
-                                 if (result == passcode) {
-                                       document.write("<center><h1>TP, The Best E-Learning </h1></center>");
+<html>
+      <body>
+            <center>
+                  <input type="text" placeholder="Username" id="User">
+                  <input type="password" placeholder="Password" id="PW">
+                  <button Onclick="protectpassword()">Enter</button>
+                  <script>
+                        function protectpassword()
+                              const result = document.getElementById("tutorial").value;
+                                 let passcode = 12345;
+                                 let space = '';
+                                 if (result == space) {
+                                    alert("type passcode")
                                  } else {
-                                       alert("incorrect passcode")
+                                       if (result == passcode) {
+                                             document.write("<center><h1>TP, The Best E-Learning </h1></center>");
+                                       } else {
+                                             alert("incorrect passcode")
+                                       }
                                  }
-                           }
-                  }
-            </script>
-      </center>
-</body>
+                        }
+                  </script>
+            </center>
+      </body>
+</html>
