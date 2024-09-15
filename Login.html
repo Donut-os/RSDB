@@ -5,15 +5,15 @@
                   <input type="password" placeholder="Password" id="PW">
                   <button Onclick="protectpassword()">Enter</button>
                   <script>
-                        function protectpassword()
-                              const result = document.getElementById("tutorial").value;
+                        function protectpassword(){
+                              const result = document.getElementById("PW").value;
                                  let passcode = 12345;
                                  let space = '';
                                  if (result == space) {
                                     alert("type passcode")
                                  } else {
                                        if (result == passcode) {
-                                             document.write("<center><h1>TP, The Best E-Learning </h1></center>");
+                                                window.open('https://donut-os.github.io/RSDB/SSP.html');
                                        } else {
                                              alert("incorrect passcode")
                                        }
