@@ -4,13 +4,16 @@
   <li><a href="Login.html">Login</a></li>
 </ul>
 <p>
-      
+
 </p>
 <html>
       <body>
             <center>
               <div>
-                <input type="text" placeholder="Username" id="User">
+                  <h2>Sign in</h2>
+                  <p>New Here? <a href="Signup.html">Create an Account</a></p>
+                  <p></p>
+                  <input type="text" placeholder="Username" id="User">
                   <input type="password" placeholder="Password" id="PW">
                   <button Onclick="protectpassword()">Enter</button>
                   <script>
@@ -36,14 +39,32 @@
 </html>
 <style>
 div {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
       padding-top: 1px;
-      border: 1px;
-      box-shadow: 2px 2px;
-      border-radius: 25px;
-      border: 2px solid black;
+      border-radius: 10px;
+      border: 2px white;
       padding: 20px;
       
       width: 400px;
       height: 150px;
+}
+
+h2 {
+      text-align: left;
+      font-size: 25px;
+}
+
+p {
+      text-align: left;
+}
+
+a {
+      text-align: left;
+}
+
+input {
+      border-radius: 5px;
+      border: 2px solid black;
 }
 </style>
