@@ -4,25 +4,26 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(0, 89, 255);
 }
 
 li {
   float: left;
+  border-radius: 25px;
 }
 
 li a {
   display: block;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: rgb(68, 133, 254);
+  color: white;
 }
 
 h1 {
