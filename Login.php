@@ -16,3 +16,41 @@ if (isset($_POST['submit']))
         $gender = $_POST['gender']; 
     } 
 } 
+
+if(isset($_POST['submit'])) 
+       { 
+          if(!isset($error)) 
+           { 
+                   echo"<h1>INPUT RECEIVED</h1><br>"; 
+                   echo "<table border='1'>"; 
+                   echo "<thead>"; 
+                   echo "<th>Parameter</th>"; 
+                   echo "<th>Value</th>"; 
+                   echo "</thead>"; 
+                   echo "<tr>"; 
+                   echo "<td>First Name</td>"; 
+                   echo "<td>".$firstname."</td>"; 
+                   echo "</tr>"; 
+                   echo "<tr>"; 
+                   echo "<td>Last Name</td>"; 
+                   echo "<td>".$lastname."</td>"; 
+                   echo "</tr>"; 
+                   echo "<tr>"; 
+                   echo "<td>Address</td>"; 
+                   echo "<td>".$address."</td>"; 
+                   echo "</tr>"; 
+                   echo "<tr>"; 
+                   echo "<td>Email Address</td>"; 
+                   echo "<td>" .$emailaddress."</td>"; 
+                   echo "</tr>"; 
+                   echo "<tr>"; 
+                   echo "<td>Password</td>"; 
+                   echo "<td>".$password."</td>"; 
+                   echo "</tr>"; 
+                   echo "<tr>"; 
+                   echo "<td>Gender</td>"; 
+                   echo "<td>".$gender."</td>"; 
+                   echo "</tr>"; 
+                   echo "</table>"; 
+        } 
+      }
