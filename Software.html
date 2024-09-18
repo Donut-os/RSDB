@@ -25,9 +25,21 @@
         height: 200px;
         bottom: -50px;
         cursor: pointer;
+        height: 100px hover;
     }
+
+    div:hover {
+        animation: Hover 3s ease-in 1s
+    }
+
+    @keyframes hover {
+    from {bottom: 0px;}
+    to {bottom: 200px;}
+    }
+
     h1 {
         position: relative;
         bottom: -40px;
     }
+
 </style>
