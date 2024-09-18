@@ -20,21 +20,21 @@
         border-radius: 10px;
         border: 2px white;
         padding: 20px;
-        position: relative;
+        position: absolute;
         width: 200px;
         height: 200px;
-        bottom: -50px;
+        bottom: 550px;
         cursor: pointer;
         height: 100px hover;
     }
 
     div:hover {
-        animation: Hover 3s ease-in 1s
+        animation: bounce 0.5s;
     }
 
-    @keyframes hover {
-    from {bottom: 0px;}
-    to {bottom: 200px;}
+    @keyframes bounce {
+        from {top: 168px;}
+        to {top: 150px;}
     }
 
     h1 {
